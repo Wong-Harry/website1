@@ -152,9 +152,9 @@ if (location.href.indexOf('ile:') < 0) {
       autoplay: true,
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     })
-    a(window).on('load', function () {
-      a('.se-pre-con').fadeOut('slow')
-    })
+    // a(window).on('load', function () {
+    //   a('.se-pre-con').fadeOut('slow')
+    // })
     a('.contact-form').each(function () {
       var f = a(this)
       f.submit(function () {
