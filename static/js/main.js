@@ -55,13 +55,13 @@ if (location.href.indexOf('ile:') < 0) {
       var f = a('#portfolio-grid').isotope({ itemSelector: '.pf-item', percentPosition: true, masonry: { columnWidth: '.pf-item' } })
       a('.blog-masonry').isotope({ itemSelector: '.blog-item', percentPosition: true, masonry: { columnWidth: '.blog-item' } })
     })
-    a('.timer').countTo()
-    a('.fun-fact').appear(
-      function () {
-        a('.timer').countTo()
-      },
-      { accY: -100 }
-    )
+    // a('.timer').countTo()
+    // a('.fun-fact').appear(
+    //   function () {
+    //     a('.timer').countTo()
+    //   },
+    //   { accY: -100 }
+    // )
     a('.popup-link').magnificPopup({ type: 'image' })
     a('.popup-gallery').magnificPopup({ type: 'image', gallery: { enabled: true } })
     a('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
