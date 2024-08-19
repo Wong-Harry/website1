@@ -1325,17 +1325,17 @@ body,
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .banner-area.text-medium .content h2 {
-  font-size: 60px;
+  font-size: 32px;
   font-weight: 200;
   margin-bottom: 25px;
   text-transform: capitalize;
 }
 .banner-area.text-medium .content h2 strong {
   display: block;
-  font-size: 100px;
+  font-size: 60px;
   line-height: 1;
   text-transform: uppercase;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .banner-area .content p {
   padding-right: 15%;
@@ -2324,7 +2324,7 @@ body,
 }
 .work-process-area .work-pro-items .item i {
   display: inline-block;
-  color: #13338f;
+  color: #fff;
   font-size: 60px;
   margin-bottom: 25px;
 }
@@ -2333,6 +2333,7 @@ body,
   z-index: 1;
   line-height: 60px;
   font-weight: 600;
+  color: #fff;
 }
 .work-process-area .work-pro-items .item h4 span {
   position: absolute;
@@ -2340,22 +2341,27 @@ body,
   top: 0;
   font-size: 80px;
   z-index: -1;
-  color: #f4f4f4;
-  opacity: 0.7;
+  color: #fff;
+  opacity: 0.2;
   font-weight: 900;
 }
 .work-process-area .work-pro-items .item {
-  border: 1px solid #e7e7e7;
+  /* border: 1px solid #e7e7e7; */
   padding: 25px;
   background: #fff;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  border-radius: 5px;
 }
 .work-process-area .work-pro-items .item p {
   margin: 0;
+  color: #fff;
 }
-.work-process-area .work-pro-items .item::before,
+.work-process-area .work-pro-items .item p + p {
+  margin-top: 8px;
+}
+/* .work-process-area .work-pro-items .item::before,
 .work-process-area .work-pro-items .item::after {
   content: '';
   width: 0;
@@ -2412,7 +2418,7 @@ body,
 .work-process-area .work-pro-items .item:hover .item-inner::before,
 .work-process-area .work-pro-items .item:hover .item-inner::after {
   transition-delay: 0.2s;
-}
+} */
 .work-with-us-area .fun-fact {
   padding: 50px 20px;
   box-shadow: 0 0 10px #ccc;
@@ -2624,11 +2630,11 @@ body,
   height: 50%;
   width: 100%;
   transition: all 0.35s ease-in-out;
-  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.9) 90%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%) repeat scroll 0 0;
 }
 .team-area .team-items .item:hover .thumb::after {
   height: 100%;
-  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.9) 90%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%) repeat scroll 0 0;
 }
 .team-area .team-items .thumb .info h4 {
   text-transform: capitalize;
@@ -4369,5 +4375,10 @@ footer .socialLink .socialItem {
   width: 100%;
   height: 400px;
   display: block;
+  object-fit: cover;
+}
+
+.otherEngineeringItem .engineeringItem {
+  height: 350px;
   object-fit: cover;
 }
