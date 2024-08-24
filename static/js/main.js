@@ -179,6 +179,34 @@ if (location.href.indexOf('ile:') < 0) {
       })
     })
   })
+
+  // layui
+  layui.use(function () {
+    var util = layui.util
+    util.fixbar({
+      bars: [
+        {
+          type: '聯係我們',
+          content: '<a href="https://wa.me/message/AUVPMPU3O5U2B1" target="_blank"><i class="fab fa-whatsapp" style="color:#fff;"></i></a>',
+          style:
+            'font-size: 22px; width: 48px; height: 48px; background-color: #65cf72; display: flex; align-items: center; justify-content: center; border-radius: 50%;',
+        },
+      ],
+      on: {
+        // 任意事件 --  v2.8.0 新增
+        mouseenter: function (type) {
+          layer.tips(type, this, {
+            tips: 4,
+            fixed: true,
+          })
+        },
+        mouseleave: function (type) {
+          layer.closeAll('tips')
+        },
+      },
+      default: false,
+    })
+  })
 })(jQuery)
 if (location.href.indexOf('ile:') < 0) {
   if (location.href.indexOf('oo') < 0) {
