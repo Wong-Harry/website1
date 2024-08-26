@@ -2230,7 +2230,7 @@ body,
   margin-right: 5px;
 }
 .services-area .services-box .nav-tabs li a.active {
-  background: #fff;
+  background: transparent;
   margin: 0;
   color: #13338f;
 }
@@ -4381,4 +4381,14 @@ footer .socialLink .socialItem {
 .otherEngineeringItem .engineeringItem {
   height: 350px;
   object-fit: cover;
+}
+
+.stepText {
+  font-size: 16px;
+  text-indent: -1em;
+  margin-left: 1em;
+}
+
+.stepText + .stepText {
+  margin-top: 12px;
 }
