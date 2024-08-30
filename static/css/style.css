@@ -243,7 +243,7 @@ input {
   content: '';
   height: 100%;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   width: 100%;
@@ -1339,7 +1339,7 @@ body,
 }
 .banner-area .content p {
   padding-right: 15%;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 32px;
 }
 .banner-area.text-center .content p,
